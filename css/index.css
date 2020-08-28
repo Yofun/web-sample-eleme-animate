@@ -1,0 +1,295 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    font-size: 0.426667rem !important;
+}
+
+header,div,section {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+ul,ol,dl {
+    list-style: none;
+}
+
+.fa {
+    vertical-align: middle;
+    margin-top: -0.08rem;
+}
+
+/* navigation  start*/
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 1.2rem;
+    padding: 0 0.426667rem;
+    color: #fff;
+}
+
+header .fa {
+    font-size: 0.64rem;
+    width: 0.666667rem;
+    height: 0.666667rem;
+    text-align: center;
+    margin-top: -0.08rem;
+}
+
+header span {
+    margin-left: 0.426667rem;
+}
+
+
+/* navigation  end*/
+
+
+/* main start */
+
+/* 头部商家信息 */
+.ele_head {
+    color: #fff;
+    font-size: 0.373333rem;
+}
+
+.ele_head_statusbar {
+    height: 1.2rem;
+}
+.ele_head_avatar {
+    display: flex;
+    flex-direction: row;
+    padding: 0.266667rem 0;
+}
+
+.ele_head_avatar .avatar {
+    width: 2.133333rem;
+    height: 2.133333rem;
+    background-image: url('https://p0.meituan.net/waimaipoi/8aa9811cab4f43d4c84758786b3c0562251868.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ele_head_avatar .info {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 0.266667rem;
+}
+
+.ele_head_avatar .info p{
+    margin-top: 0.133333rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ele_head_des{
+}
+
+.ele_head_des i {
+    font-size: 0.48rem;
+    color: lightgreen;
+    margin-right: 0.266667rem;
+}
+
+.ele_main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ele_head {
+    padding: 0 0.266667rem 0.266667rem 0.266667rem;
+    background-color: #333;
+}
+
+/* 主体部分 start */
+.ele_body{
+    height: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.ele_main_tab {
+    display: flex;
+    padding: 0 0.266667rem;
+}
+.ele_main_tab div {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    color: #737373;
+    padding: 0.266667rem 0;
+}
+
+.ele_main_tab div.active {
+    color: #02B6FD;
+}
+.ele_main_tab div.active::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    background-color: #02b6fd;
+}
+
+
+.ele_main_box {
+    height: 0;
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.ele_main_menu {
+    width: 100px;
+}
+
+.ele_main_menu {
+    
+}
+
+.ele_main_menu li {
+    position: relative;
+    padding: 0.266667rem 0;
+    text-align: center;
+}
+
+.ele_main_menu li.active::before {
+    content: '';
+    position: absolute;
+    width: 0.08rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #02B6FD;
+}
+
+.ele_main_goods {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.ele_main_goods li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.266667rem;
+    font-size: 0.373333rem;
+}
+
+.ele_main_goods_content {
+    width: 0;
+    flex-grow: 1;
+    margin-left: 0.266667rem;
+}
+
+.ele_main_goods_content > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ele_main_goods li img {
+    width: 80px;
+}
+
+
+.ele_main_goods li .title {
+    font-weight: 700;
+    font-size: 0.426667rem;
+}
+
+.ele_main_goods_add {
+    font-size: 0.64rem;
+    color: #02B6FD;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+/* 主体部分 end */
+
+
+
+/* 购物车start */
+.ele_car {
+    display: flex;
+    height: 1.333333rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.ele_car_price {
+    flex-grow: 1;
+}
+
+.ele_car_price > div {
+    display: inline-block;
+}
+
+.ele_car_icon {
+    position: relative;
+    top: -0.8rem;
+    width: 1.333333rem;
+    height: 1.333333rem;
+    margin-right: 0.533333rem;
+    border-radius: 50%;
+    margin-left: 0.533333rem;
+    background-color: #02B6FD;
+    padding: 0.266667rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ele_car_icon .fa {
+    margin: 0;
+    font-size: 0.64rem;
+}
+
+.ele_car_pri div:nth-of-type(1){
+    font-weight: 700;
+}
+
+.ele_car_pri div:nth-of-type(2){
+    font-size: 0.373333rem;
+}
+
+
+.ele_car_pay {
+    width: 3.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.333333rem;
+    background-color: #09bb07;
+}
+/* 购物车end */
+/* main end */
+
+/* .animation {
+    transform: ;
+} */
